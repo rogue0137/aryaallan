@@ -1,4 +1,50 @@
 @import 'bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+// my own
+
+.topborder {
+    padding: 50px 0;
+    background: url('../img/redfooter.jpg') no-repeat bottom center scroll;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+.btn-red {
+border: 1px solid #610000;
+color: #fff;
+background-color: #9C0000;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+//loading
+
+#load_screen{
+    background: #AC0816;
+    opacity: 1;
+    position: fixed;
+    z-index:10;
+    top: 0px;
+    width: 100%;
+    height: 1600px;
+}
+#load_screen > #loading{
+    color:#FFF;
+    width:120px;
+    height:24px;
+    margin: 300px auto;
+    font-family: 'Lobster', cursive;
+    font-size: 34px;
+    text-align: left;
+}
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -10,8 +56,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #1abc9c;
+    color: #000;
+    background-color: rgba(236, 240, 241,1.0);
 }
 
 html {
@@ -26,8 +72,9 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    // text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    // font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -90,8 +137,9 @@ a:focus {
     outline: 0;
 }
 
+// navbar font colors 
 .navbar-custom a {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-custom .nav li.active {
@@ -139,9 +187,11 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background-image: url(../app/assets/images/womenwithcomputer.jpg) no-repeat bottom center scroll;
-    background-color: #1abc9c;
+    text-shadow: 2px 2px #fff;
+    color: #AC0816;
+    // add image below 
+    background: url('../img/womanwithtablet.jpg') no-repeat bottom center scroll;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -159,6 +209,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    color: #000;
 }
 
 @media(min-width:767px) {
@@ -334,6 +385,8 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    color: #fff;
+    background: url('../img/redfooter.jpg') no-repeat bottom center scroll;
 }
 
 footer p {
