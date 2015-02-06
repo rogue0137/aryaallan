@@ -1,14 +1,9 @@
 var main = function() {
   $('#logo').scroll(function(){
-    $(this).hide('slow'); 
+    $('this').hide('slow'); 
+    // change this to logo
   });
 };
-
-
-
-$( "#target" ).scroll(function() {
-
-});
 
 $(document).ready(main);
 
